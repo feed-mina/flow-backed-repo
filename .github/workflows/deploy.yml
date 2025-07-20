@@ -22,7 +22,7 @@ jobs:
 
       - name: Upload project
         run: |
-          tar --exclude='./node_modules' -czf app.tar.gz .
+          tar --exclude='./node_modules' -czf app.tar.gz . --ignore-failed-read
           scp -i ~/.ssh/id_rsa app.tar.gz ubuntu@${{ secrets.EC2_HOST }}:/home/ubuntu
 
       - name: Remote Deploy Command

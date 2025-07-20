@@ -9,6 +9,7 @@ UploadLog.initModel(sequelize);
 
 
 const db = {
+  Sequelize,      
   sequelize,
   BlockedExtension,
   UploadLog,

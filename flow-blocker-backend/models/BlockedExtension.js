@@ -1,7 +1,7 @@
 const { DataTypes, Model } = require('sequelize');
 
 class BlockedExtension extends Model {
-    static inintModel(sequelize){
+    static initModel(sequelize){
         BlockedExtension.init(
             {
                 userId:{

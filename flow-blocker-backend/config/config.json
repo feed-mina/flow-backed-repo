@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres1234",
+    "database": "flowdb",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "postgres1234",
+    "database": "flowdb",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

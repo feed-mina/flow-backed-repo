@@ -28,6 +28,7 @@ jobs:
       - name: Remote Deploy Command
         run: |
           ssh -i ~/.ssh/id_rsa ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
+            docker rm -f blocker_pg || true
             cd ~/ && rm -rf app && mkdir app && tar -xzf app.tar.gz -C app
             cd app
             docker-compose down || true
